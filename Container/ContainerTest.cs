@@ -9,10 +9,16 @@ namespace DeveloperSample.Container
     internal class ContainerTestClass : IContainerTestInterface
     {
     }
-
+    //Test interface
+    internal interface IContainerTestInterface2
+    {
+    }
+    internal class ContainerTestClass2 : IContainerTestInterface2
+    {
+    }
     public class ContainerTest
     {
-        [Fact(Skip="Not implemented")]
+        [Fact]
         public void CanBindAndGetService()
         {
             var container = new Container();
